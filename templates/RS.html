@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>kawal covid</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        </thead>
+        <h1 class="">Rumah Sakit Rujukan Pasien Covid-19</h1>
+        <table class="table table-bordered, table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Nama Rumah Sakit</th>
+                    <th scope="col">Alamat</th>
+                    <th scope="col">Daerah</th>
+                    <th scope="col">Telepon</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in range(0,len) %}
+                <tr>
+                    <th sorted="col">{{i+1}}</th>
+                    <td sorted="col">{{rs[i]['name']}}</td>
+                    <td sorted="col">{{rs[i]['address']}}</td>
+                    <td sorted="col">{{rs[i]['region']}}</td>
+                    <td sorted="col">{{rs[i]['phone']}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+    <title>kawal COVID19</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4, text-center">Kawal Covid-19</h1>
+            <p class="lead, text-center">Bersinergi untuk melawan Covid</p>
+        </div>
+    </div>
+    <div>
+        <p class="justify">Corona Virus Disease 2019 atau biasa dikenal dengan nama COVID19,
+            COVID19 adalah penyakit menular yang disebabkan oleh SARS-CoV-2, salah satu jenis virus korona.</p>
+        <p>Adapun gejala yanga dialami oleh pederita yaitu: </p>
+        <p>1. Demam</p>
+        <p>2. Batuk Kering</p>
+        <p>3. Kesulitan Bernafas</p>
+        <p>4. Sakit Tenggorokan</p>
+        <p>5. Pilek / Bersin-bersin</p>
+        <h4>Jika anda atau saudara anda terkena gejala-gejala diatas maka diusahakan untuk tidak panik dan klik tulisan
+            dibawah ini untuk mengetahui call center rumah sakit terdekat untuk berobat :</h4>
+        <P><a href="{{url_for('rs')}}">Rumah Sakit</a></P>
+    </div>
+    <div>
+        <h4>Jika anda ingin tahu tentang perkembangan informasi Covid di Indonesia bisa klik tulisan dibawah ini :</h4>
+        <P><a href="{{url_for('nasional')}}">Indonesia</a></P>
+        <h4>Jika anda ingin tahu tentang perkembangan informasi Covid di Provinsi bisa klik tulisan dibawah ini :</h4>
+        <P><a href="{{url_for('prov')}}">Provinsi</a></P>
+    </div>
+    </div>
+</body>
+
+</html>

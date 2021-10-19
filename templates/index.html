@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: pink;
+        }
+    </style>
+    <title>kawal covid</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Kawal Covid-19</h1>
+            <p class="lead">Bersinergi Untuk Melawan Covid</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="text-center">Laporan COVID-19 Nasional</h2>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card border-primary rounded shadow">
+                    <p class="text-center">POSITIF</p>
+                    <h5 class="text-primary, text-center">{{covid[0]['positif']}}</h5>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card border-primary rounded shadow">
+                    <p class="text-center">SEMBUH</p>
+                    <h5 class="text-primary, text-center">{{covid[0]['sembuh']}}</h5>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card border-primary rounded shadow">
+                    <p class="text-center">DIRAWAT</p>
+                    <h5 class="text-primary, text-center">{{covid[0]['dirawat']}}</h5>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card border-primary rounded shadow">
+                    <p class="text-center">MENINGGAL</p>
+                    <h5 class="text-primary, text-center">{{covid[0]['meninggal']}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
